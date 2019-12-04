@@ -1,0 +1,8 @@
+LogFile2019/11/27 20:26:12 example.go:60: ------
+LogFile2019/11/27 20:26:12 example.go:61: 1.Go log Print test
+LogFile2019/11/27 20:26:12 example.go:62: 2.Go log Println test
+LogFile2019/11/27 20:26:12 example.go:63: Go log Fatalln test
+[LogFile] 2019/11/27 20:27:47 example.go:59: ------
+[LogFile] 2019/11/27 20:27:47 example.go:60: 1.Go log Print test
+[LogFile] 2019/11/27 20:27:47 example.go:61: 2.Go log Println test
+[LogFile] 2019/11/27 20:27:47 example.go:62: Go log Fatalln test
