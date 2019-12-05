@@ -1,32 +1,33 @@
 package main
 
 import (
-	"github.com/pk3589/modexample/mylog"
+	"fmt"
 	"log"
 	"os"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
 
-	//r := gin.Default()
-	//
-	//r.GET("/ping", func(c *gin.Context) {
-	//
-	//	c.JSON(200, gin.H{
-	//
-	//		"message": "pong",
-	//	})
-	//
-	//})
-	//fmt.Printf("come on")
-	//r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	r := gin.Default()
+
+	r.GET("/ping", func(c *gin.Context) {
+
+		c.JSON(200, gin.H{
+
+			"message": "pong",
+		})
+
+	})
+	fmt.Printf("come on")
+	r.Run() // listen and serve on 0.0.0.0:8080
 
 
 	//pintLogToFile()
 
-	mylog.Info.Println("这是一行info日志")
-	mylog.Error.Println("这是一行error日志")
-	mylog.Debug.Println("这是一行debug日志")
+	//mylog.Info.Println("这是一行info日志")
+	//mylog.Error.Println("这是一行error日志")
+	//mylog.Debug.Println("这是一行debug日志")
 
 }
 
